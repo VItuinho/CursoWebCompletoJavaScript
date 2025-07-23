@@ -1,7 +1,8 @@
-if (7 >= 7) {
-    document.write("Entrou dentro do bloco if (verdadeiro)")
-} else {
-    document.write("Entrou dentro do bloco else (falso)")
-}
+var nota = prompt('Digite a nota do aluno:')
+var media = 7
 
-//else {}
+if (nota >= media) {
+    document.write("Aprovado")
+} else {
+    document.write("Reprovado")
+}

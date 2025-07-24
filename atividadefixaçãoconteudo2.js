@@ -7,31 +7,29 @@ altura = (altura / 100)
 var IMC = (peso / (altura * altura))
 var classificacao = ''
 
-switch (IMC) {
-    case (IMC < 16):
-        classificacao = 'Baixo peso muito grave'
-        break
-    case (IMC > 16 && IMC < 16.99):
-        classificacao = 'Baixo peso grave'
-        break
-    case (IMC > 17 && IMC < 18.49):
-        classificacao = 'Baixo peso'
-        break
-    case (IMC > 18.50 && IMC < 24.99):
-        classificacao = 'Peso normal'
-        break
-    case (IMC > 25 && IMC < 29.99):
-        classificacao = 'Sobrepeso'
-        break
-    case (IMC > 30 && IMC < 34.99):
-        classificacao = 'Obesidade grau I'
-        break
-    case (IMC > 35 && IMC < 39.99):
-        classificacao = 'Obesidade grau II'
-        break
-    case (IMC > 40):
-        classificacao = 'Obesidade grau III'
-        break
+if (IMC < 16) {
+    classificacao = 'Baixo peso muito grave'
+}
+else if (IMC >= 16 && IMC <= 16.99) {
+    classificacao = 'Baixo peso grave'
+}
+else if (IMC >= 17 && IMC <= 18.49) {
+    classificacao = 'Baixo peso'
+}
+else if (IMC >= 18.50 && IMC <= 24.99) {
+    classificacao = 'Peso normal'
+}
+else if (IMC >= 25 && IMC <= 29.99) {
+    classificacao = 'Sobrepeso'
+}
+else if (IMC >= 30 && IMC <= 34.99) {
+    classificacao = 'Obesidade grau I'
+}
+else if (IMC >= 35 && IMC <= 39.99) {
+    classificacao = 'Obesidade grau II'
+}
+else {
+    classificacao = 'Obesidade grau III'
 }
 
 document.write(nome + ' possui índice de massa corporal igual a ' + IMC.toFixed(2) + ', sendo classificado como ' + classificacao + '.')

@@ -5,7 +5,7 @@ do {
 } while (x <= 10)
 
 /*
-while(condicao) {
-
+while(x <= 10) {
+    document.write(x + '<br>')
 }
 */

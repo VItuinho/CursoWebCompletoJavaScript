@@ -16,7 +16,7 @@ var y = 1
 
 
 while (y <= 10) {
-    x = 1; //Em uma tabuada, ele sempre começa com o valor vezes 1, então sempre tem que começar com 1   
+    x = 1; //Em uma tabuada, ele sempre começa com o valor vezes 1, então sempre tem que começar com 1    
     
     while (x <= 10) {
         document.write(y + ' x ' + x + ' = ' + (y * x) + '<br>')

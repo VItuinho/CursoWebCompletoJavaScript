@@ -17,11 +17,13 @@ function posicaoRandomica() {
     if (document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove()
         if (vidas > 3) {
-            alert('Interromper o jogo (game over)')
-        }
-        document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png"
 
-        vidas++
+            window.location.href = 'fim_de_jogo.html'
+        } else {
+            document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png"
+
+            vidas++
+        }
     }
 
     var posicaoX = Math.floor(Math.random() * largura) - 90

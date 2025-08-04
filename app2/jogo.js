@@ -19,6 +19,7 @@ var cronometro = setInterval(function () {
         clearInterval(cronometro)
         clearInterval(criaMosca)
         alert('Vitória')
+        window.location.href = 'vitoria.html'
     } else {
         document.getElementById('cronometro').innerHTML = tempo
     }

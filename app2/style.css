@@ -2,10 +2,17 @@ html {
     cursor: url(imagens/mata_mosca.png) 30 30, auto;
 }
 
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(imagens/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .mosquito1 {
@@ -50,4 +57,30 @@ body {
     float: left;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* === Ajustes responsivos === */
+@media (max-width: 768px) {
+
+  body {
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .painel {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  .btn-lg,
+  select.form-control {
+    width: 90%;
+    max-width: 320px;
+    margin: 10px auto;
+    display: block;
+  }
 }
